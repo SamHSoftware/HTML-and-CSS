@@ -1,0 +1,16 @@
+<!-- The h1 element is often used to make a title for a given page -->
+<h1>Header 1 element</h1>
+
+<h2>Header 2 element</h2>
+
+<h3>Header 3 element</h3>
+
+<!-- The main element is a descriptive HTML tag. The 'main' HTML5 tag helps developers and search engines find the most imporaant content of your page -->
+
+<main> 
+<p>Paragraph element. HTML is a markup laguage, a system for annotating elements within a document such that a computer can manipulate that text. The HTML markup tags are < and >.</p>
+</main>
+
+<img src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" alt="The 'src' atribute is used to point to a particular image URL. It is best practice to include an 'alt' element for images, even when that element is left empty.">
+
+<!-- The 'a' (anchor) element can be used to 
