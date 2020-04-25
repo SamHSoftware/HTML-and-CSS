@@ -1,16 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<style> 
+  h2 {
+    color: red;
+  }
+  
+  .blue-text{
+  color:blue;
+  }
+  
+    p {
+    font-size: 12px;
+  }
+  
+  p {
+  font-family: monospace, sans-serif;
+  }
+  
+  .small-image {
+  width: 300px;
+  }
+  
+  .circular-image {
+  border-radius: 50%;
+  }
+  
+  .silver-background {
+  background-color: silver;
+  }
+  
+
+#dead-link {
+background-color: green;
+}
+  
+</style>
+
+<head
+  <!-- metadata elements --> 
+  <title>The page title</title>
+</head>
+
+<body> <!-- page contents -->
+
+
 <!-- The h1 element is often used to make a title for a given page -->
 <h1>Header 1 element</h1>
 
+<a href="#footer">A link to the footer of the page.</a>
+
 <h2>Header 2 element</h2>
 
-<h3>Header 3 element</h3>
+<h3 class="blue-text">Header 3 element</h3>
 
 <!-- The main element is a descriptive HTML tag. The 'main' HTML5 tag helps developers and search engines find the most imporaant content of your page -->
 
 <main> 
-<p>Paragraph element. HTML is a markup laguage, a system for annotating elements within a document such that a computer can manipulate that text. The HTML markup tags are < and >.</p>
+
+<p class="silver-background">Paragraph element. HTML is a <a target="_blank" href="https://en.wikipedia.org/wiki/Markup_language"> markup language</a>, a system for annotating elements within a document such that a computer can manipulate that text. The HTML markup tags are < and >.
+
+<p id="dead-link"> Soemtimes, when creating a website, it is useful to simply create a dead link. The following link is an example of a dead link. It doesn't lead anywhere. This is because I've used the '#' symbol instead of an actual link.<a target="_blank" href="'#"> I'm a dead link, click me</a> 
+</p>
+
+<p> This <a href="#"><img src="https://www.google.com/search?q=coding+picture&rlz=1C1CHBF_en-GBGB790GB790&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi0xKzlif_oAhVHURUIHXMABlcQ_AUoAXoECA8QAw&biw=2048&bih=963#imgrc=kISNwk4xJxV1YM" alt="">dead link</a> looks similar, but the code is a little different, as it contains a refernce to an image. Have a look at the code if you're interested.
+</p>
+
+<p> It is possible to create unorderd lists, aka bullet point lists. Here is an example in the form of some of my specialisations:
+<ul>
+	<li>Human embryonic stem cell tracking through time and space.</li>
+    <li>High content pipeline design to analyse microscopy data.</li>
+    <li>Analysis and thresholding of FUCCI signals from nuclei.</li>
+</ul>
+</p>
+
+<p>
+As an alternative, one can create ordered (numbered lists) too. Here are a number of cell types which I analyse data from. 
+<ol>
+	<li>Human embryonic stem cells.</li>
+    <li>HeLa cells.</li>
+    <li>HEK293 cells.</li>
+</ol>
+</p>
 </main>
 
-<img src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" alt="The 'src' atribute is used to point to a particular image URL. It is best practice to include an 'alt' element for images, even when that element is left empty.">
+<p> 
+One can also input text into the website via a text field. Enter text here: 
+<input type="text", placeholder="Enter here">
+</p>
 
-<!-- The 'a' (anchor) element can be used to 
+<p> 
+One can also input text into the website via a text field nexted within a form element. Form elements can be used to send information back to a server. The following text field looks the same, but the code is different. Have a look if you're intersted. Furthermore, there is a submit button, which will send information from the form to the URL (see code). Enter text here: 
+<form action="/submit-information-to-server-link"><input type="text" placeholder="Type text here please" required> <!-- The 'required' attribute will prevent the form from bein submitted unless something has been entered. -->
+<button type="submit"> Submit information</button>
+</form>
+</p>
+
+
+<p>
+Another cool thing one can do, is create a list of radio buttons for the user to select. Radio buttons are an input/ We can wrap radoi buttons in a label element, and this will link the radio button to the label element surrounding it. If you want radio buttons to be in the same group, they should have the same name atribbute. Only one button can be selected per group. Finally, it is considered good practice to submit a 'for' attribute on the 'label' element with something that matches the 'id' attribute. This allows certain technologies to create a linked relationship betwen the label and child. Which of these are your favirote foods: 
+<form> 
+	<label for="cheese">
+      <input id="cheese" value="cheese" type="radio" name="foods">Cheese
+    </label>
+    <label for="bread">
+    <input id="bread" value="bread" type="radio" name="foods">Bread
+    </label>
+</form>
+Which of these are your preferred wood types? 
+<form>
+  <label for="oak">
+  	<input id="oak" value="oak" type="radio" name="woods">Oak
+  </label> 
+  <label for="lime">
+  	<input id="lime" value="lime" type="radio" name="woods">Lime
+  </label>
+  
+</form>
+</p>
+
+<p>
+We can do more or less the same thing with checkboxes. In this instance, the 'Tuna' box is already checked with the 'checked' attribute. Which are your favorite types of fish? 
+  <label for="tuna">
+    <input id="tuna" value="tuna" type="checkbox" checked name="fish">Tuna 
+  </label> 
+  <label for="bass">
+    <input id="bass" value="bass" type="checkbox" name="fish">Bass 
+  </label>
+  <label for="trout">
+    <input id="trout" value="trout" type="checkbox" name="fish">Trout 
+</p>
+
+<img class="small-image circular-image" src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" alt="The 'src' atribute is used to point to a particular image URL. It is best practice to include an 'alt' element for images, even when that element is left empty.">
+
+<!-- The 'a' (anchor) element can be used to provide a link to exterior webpages --> 
+<a href="https://en.wikipedia.org/wiki/HTML"> This is the hyperlink text.</a>
+
+<footer id="footer"> This is the footer</footer>
+
+</body>
+
+</html>
