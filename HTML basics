@@ -4,6 +4,7 @@
 <style> 
   h2 {
     color: red;
+    text-align: center;
   }
   
   .blue-text{
@@ -12,10 +13,12 @@
   
     p {
     font-size: 12px;
+    text-align: justify;
+    font-family: monospace, sans-serif;
   }
   
-  p {
-  font-family: monospace, sans-serif;
+  .thin-paragraph {
+  width: 100px;
   }
   
   .small-image {
@@ -31,9 +34,17 @@
   }
   
 
-#dead-link {
-background-color: green;
-}
+  #dead-link {
+  background-color: green;
+  }
+  
+  [type='radio'] {
+  margin: 15px 0px 15px 0px
+  }
+  
+  --centre-text {
+  text-align: center;
+  }
   
 </style>
 
@@ -60,7 +71,8 @@ background-color: green;
 
 <p class="silver-background">Paragraph element. HTML is a <a target="_blank" href="https://en.wikipedia.org/wiki/Markup_language"> markup language</a>, a system for annotating elements within a document such that a computer can manipulate that text. The HTML markup tags are < and >.
 
-<p id="dead-link"> Soemtimes, when creating a website, it is useful to simply create a dead link. The following link is an example of a dead link. It doesn't lead anywhere. This is because I've used the '#' symbol instead of an actual link.<a target="_blank" href="'#"> I'm a dead link, click me</a> 
+<p id="dead-link" class="thin-paragraph">
+Sometimes, when creating a website, it is useful to simply create a dead link. The following link is an example of a dead link. It doesn't lead anywhere. This is because I've used the '#' symbol instead of an actual link.<a target="_blank" href="'#"> I'm a dead link, click me</a> 
 </p>
 
 <p> This <a href="#"><img src="https://www.google.com/search?q=coding+picture&rlz=1C1CHBF_en-GBGB790GB790&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi0xKzlif_oAhVHURUIHXMABlcQ_AUoAXoECA8QAw&biw=2048&bih=963#imgrc=kISNwk4xJxV1YM" alt="">dead link</a> looks similar, but the code is a little different, as it contains a refernce to an image. Have a look at the code if you're interested.
