@@ -5,6 +5,18 @@
   h2 {
     color: red;
     text-align: center;
+    padding: 5px;
+    background-color: rgba(45, 45, 45, 0.1);
+  }
+  
+  
+    .links {
+    text-align: left;
+    color: black;
+  }
+  
+  h3 { 
+  font-size: 30px;
   }
   
   .blue-text{
@@ -48,6 +60,30 @@
   
   --centre-text {
   text-align: center;
+  }
+  
+  .centerme {
+     text-align: center;
+  }
+  
+  .fullCard {
+  width: 245px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  margin: 10px 5px;
+  padding: 4px; 
+  }
+  
+  .cardContent {
+  padding: 10px;
+  }
+  
+  .cardText {
+  margin-bottom: 30px; 
+  }
+  
+    #thumbnail { 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
   
 </style>
@@ -149,6 +185,22 @@ We can do more or less the same thing with checkboxes. In this instance, the 'Tu
   <label for="trout">
     <input id="trout" value="trout" type="checkbox" name="fish">Trout 
 </p>
+
+<p> Here is an example of a card:</p>
+
+<div class="fullCard" id=thumbnail>
+	<div class="cardContent">
+    	<div class="cardText">
+          <h1 class="centerme"> Title </h1> 
+          <hr> 
+          <p><em>Words that go into the card go <strong>here</strong>. </em></p>
+        </div>
+        
+        <div class="cardLinks"> 
+        	<a href="https://wordfinder.yourdictionary.com/" target="_blank" class="links"> Link to words</a>
+        </div> 
+    </div>
+</div>
 
 <img class="small-image circular-image" src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" alt="The 'src' atribute is used to point to a particular image URL. It is best practice to include an 'alt' element for images, even when that element is left empty.">
 
