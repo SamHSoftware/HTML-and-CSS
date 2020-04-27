@@ -9,6 +9,14 @@
     background-color: rgba(45, 45, 45, 0.1);
   }
   
+  .shift-text-right {
+  position: relative; 
+  left: 20px;
+  }
+  
+  a:hover {
+  color:pink;
+  }
   
     .links {
     text-align: left;
@@ -74,6 +82,11 @@
   padding: 4px; 
   }
   
+  .centre-image {
+  display: block;
+  margin: auto;
+  }
+  
   .cardContent {
   padding: 10px;
   }
@@ -106,7 +119,7 @@
 <!-- The hr tag adds a horizontal line.-->
 <hr>
 
-<h3 class="blue-text">Header 3 element</h3>
+<h3 class="blue-text shift-text-right">Header 3 element</h3>
 
 <!-- The main element is a descriptive HTML tag. The 'main' HTML5 tag helps developers and search engines find the most imporaant content of your page -->
 
@@ -202,7 +215,7 @@ We can do more or less the same thing with checkboxes. In this instance, the 'Tu
     </div>
 </div>
 
-<img class="small-image circular-image" src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" alt="The 'src' atribute is used to point to a particular image URL. It is best practice to include an 'alt' element for images, even when that element is left empty.">
+<img class="small-image circular-image centre-image" src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" alt="The 'src' atribute is used to point to a particular image URL. It is best practice to include an 'alt' element for images, even when that element is left empty.">
 
 <!-- The 'a' (anchor) element can be used to provide a link to exterior webpages --> 
 <a href="https://en.wikipedia.org/wiki/HTML"> This is the hyperlink text.</a>
