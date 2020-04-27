@@ -21,6 +21,10 @@
   width: 100px;
   }
   
+  .tall-paragraph { 
+  height: 100px;
+  }
+  
   .small-image {
   width: 300px;
   }
@@ -57,11 +61,14 @@
 
 
 <!-- The h1 element is often used to make a title for a given page -->
-<h1>Header 1 element</h1>
+<h1 class="tall-paragraph">Header 1 element</h1>
 
 <a href="#footer">A link to the footer of the page.</a>
 
 <h2>Header 2 element</h2>
+
+<!-- The hr tag adds a horizontal line.-->
+<hr>
 
 <h3 class="blue-text">Header 3 element</h3>
 
@@ -69,10 +76,10 @@
 
 <main> 
 
-<p class="silver-background">Paragraph element. HTML is a <a target="_blank" href="https://en.wikipedia.org/wiki/Markup_language"> markup language</a>, a system for annotating elements within a document such that a computer can manipulate that text. The HTML markup tags are < and >.
+<p class="silver-background">Paragraph element. HTML is a <a target="_blank" href="https://en.wikipedia.org/wiki/Markup_language"> markup language</a>, a system for annotating elements within a document such that a <u>computer</u> can manipulate that text. The <strong>HTML markup tags</strong> are < and >.
 
 <p id="dead-link" class="thin-paragraph">
-Sometimes, when creating a website, it is useful to simply create a dead link. The following link is an example of a dead link. It doesn't lead anywhere. This is because I've used the '#' symbol instead of an actual link.<a target="_blank" href="'#"> I'm a dead link, click me</a> 
+Sometimes, when creating a website, it is useful to simply create a dead link. The following link is an example of a dead link. <em>It doesn't lead anywhere</em>. This is because I've used the '#' symbol instead of an actual link.<a target="_blank" href="'#"> I'm a dead link, click me</a> 
 </p>
 
 <p> This <a href="#"><img src="https://www.google.com/search?q=coding+picture&rlz=1C1CHBF_en-GBGB790GB790&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi0xKzlif_oAhVHURUIHXMABlcQ_AUoAXoECA8QAw&biw=2048&bih=963#imgrc=kISNwk4xJxV1YM" alt="">dead link</a> looks similar, but the code is a little different, as it contains a refernce to an image. Have a look at the code if you're interested.
