@@ -1,1 +1,180 @@
+ <html lang="en"> 
+  
+<body> 
+  
+  <div class="banner"></div> <!-- Banner --> 
+  
+  <main> 
+    
+    <form>
+    
+      <section id="introduction" class="background-color-intro">
+        <h1 id="form-title">Survey form: Learning to code? </h1> 
+        <p id="form-description">We would love to find out about your coding experience. Whether you've just started, or you're a long time pro, we want to hear about it.</p>
+      </section>
 
+      <section id="background-information" class="row">
+
+        <div class="column1">
+          <h2 id="section-title">Background </h2> 
+        </div>
+
+        <div class="column2">
+
+          <div class="Q-A-pair">
+            <label for"name">What is your name?</label> 
+            <input class="input-box" id="name" type="text" placeholder="Name" required></input> 
+          </div> 
+
+          <div class="Q-A-pair">
+            <label for="age">What is your age?</label> 
+            <input class="input-box" id="age" type="number" placeholder="Age" required></input> 
+          </div> 
+
+          <div class="Q-A-pair"> 
+            <label for="e-mail">What is your e-mail?<label> 
+            <input class="input-box" id="e-mail" type="email" placeholder="e-mail" required></input> 
+          </div> 
+
+          <div class="Q-A-pair"> 
+            <p>Would you like to be kept up to date via e-mail?</p> 
+
+              <label class="radio" for="e-mail-yes">
+                <input type="radio" value="yes-email" name="email" id="e-mail-yes"></input> 
+                  Yes
+                <span></span> 
+              </label> 
+
+              <label class="radio" for="e-mail-yes">
+                <input type="radio" value="yes-email" name="email" id="e-mail-yes"></input> 
+                  No
+                <span></span> 
+              </label> 
+          </div>
+    
+
+        </div> 
+      </section>
+
+      <section id="education" class="row">
+
+        <div class="column1">
+          <h2 id="section-title">Education</h2> 
+        </div>
+
+        <div class="column2">
+
+            <div class="Q-A-pair"> 
+              <p>How did you learn to code? Check all that apply.</p> 
+
+                  <label class="checkbox" for="school">
+                      <input type="checkbox" value="school" name="education1" id="school"></input> 
+                      I was taught at school
+                      <span></span> 
+                  </label>
+                  <label class="checkbox" for="university">
+                      <input type="checkbox" value="university" name="education1" id="university"></input> 
+                        I was taught at university
+                      <span></span> 
+                  </label>
+                  <label class="checkbox" for="online-course">
+                      <input type="checkbox" value="online" name="education1" for="online-course"></input> 
+                        I took an online course
+                      <span></span> 
+                  </label>
+                  <label class="checkbox" for="self-taught">
+                      <input type="checkbox" value="self-taught" name="education1" for="self-taught"></input> 
+                        I am self taught
+                      <span></span> 
+                  </label>
+          </div>
+
+           <div class="Q-A-pair">
+            <label for"additional-education">How else did you learn to code? Let us know below.</label> 
+            <textarea class="input-box-textarea" id="additional-education" type="text" placeholder="Enter answer here"></textarea> 
+          </div> 
+
+           <div class="Q-A-pair">
+            <p id="education-duration">For how long have you been coding?</p> 
+                <select class="drop-down-form" name="education-duration" id="dropdown" required>
+                  <option value="" class="italic" selected disabled>Select a time range</option>
+                  <option value="Up to a month">Up to a month</option>
+                  <option value="One to six months">One to six months</option>
+                  <option value="Six months to one year">Six months to one year</option>
+                  <option value="One year to five years">One year to five years</option>
+                  <option value="More than five years">More than five years</option>
+              </select>
+          </div> 
+
+        </div> 
+      </section>
+
+      <section id="progress" class="row">
+
+        <div class="column1">
+          <h2 id="section-title">Aspirations</h2> 
+        </div>
+
+        <div class="column2">
+
+            <div class="Q-A-pair"> 
+            <p>Do you plan to keep coding?</p> 
+
+              <label class="radio" for="coding-yes">
+                <input type="radio" value="yes-coding" name="coding" id="coding-yes"></input> 
+                  Yes
+                <span></span> 
+              </label> 
+
+              <label class="radio" for="coding-no">
+                <input type="radio" value="no-email" name="coding" id="coding-no"></input> 
+                  No
+                <span></span> 
+              </label> 
+          </div>
+
+            <div class="Q-A-pair"> 
+              <p>How do you plan to use your coding skills in the future? Check all that apply.</p> 
+
+                  <label class="checkbox" for="personal">
+                      <input type="checkbox" value="personal" name="future" id="personal"</input> 
+                      I will use coding for personal projects
+                      <span></span> 
+                  </label>
+                  <label class="checkbox" for="industry">
+                      <input type="checkbox" value="industry" name="future" id="industry"></input> 
+                        I will use coding within industry
+                      <span></span> 
+                  </label>
+                  <label class="checkbox" for="academia">
+                      <input type="checkbox" value="academia" name="future" id="academia"></input> 
+                        I will use coding within academia
+                      <span></span> 
+                  </label>
+                  <label class="checkbox" for="teaching">
+                      <input type="checkbox" value="teaching" name="future" id="teaching"></input> 
+                        I will teach coding to others
+                      <span></span> 
+                  </label>
+          </div>
+
+           <div class="Q-A-pair">
+            <label for"name">Any other coding aspirations? Let us know below!</label> 
+            <textarea class="input-box-textarea" id="name" type="text" placeholder="Enter answer here"></textarea> 
+          </div> 
+
+        </div> 
+
+      </section>
+
+      <section id="Submit"> 
+        <button class="submit-button" type="submit">Click to Submit</button> 
+      </section> 
+
+    </form> 
+
+  </main>
+
+</body> 
+  
+</html> 
