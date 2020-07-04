@@ -1,1 +1,325 @@
+/* ---- General styles ------*/
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: rgb(250 250 250);
 
+  } /*Page colour etc.*/
+  main { 
+    max-width: 900px;
+     width: 100%;
+    margin: auto; 
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 20px rgba(0, 0, 0, 0.23);
+    background: white; 
+    text-align: center; 
+    margin-top: -100px; 
+    display: flex;
+    flex-direction: column;
+  }
+  section { 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.23);
+  }
+
+  h1 {
+    font-size: 50px; 
+    margin: 0px;}
+  h2 {
+    font-size: 27px;
+    padding: 0px 10px 20px 10px;
+  }
+  p {margin: 0px;}
+  p, label { 
+    font-size: 19px; 
+  }
+  input[type="text"]{
+      padding-left:10px;
+    }
+  input[type="number"]{
+      padding-left:10px;
+    }
+  input[type="email"]{
+      padding-left:10px;
+    }
+  textarea { 
+    padding: 10px; }
+  select { 
+    padding: 10px;
+}
+  option { 
+    color: black;
+  }
+
+/* ----- General Classes ----*/
+  .column1 {
+    flex: 1;
+    margin: 0 15px;
+  }
+  .column2 {
+      flex: 2;
+      margin: 0 15px;
+    }
+  .row {
+    display: flex;
+  }
+  .Q-A-pair { 
+    margin: 20px 10px 40px 10px;
+    text-align:left; 
+  }
+  .input-box{ 
+    display: block; /* Makes input box go to next line*/ 
+    max-width: 250px;
+    width: 80%;
+    height: 40px; 
+    outline: none; /*removes border when block is clicked on*/
+    border: none; /* removes border when box is just sitting there*/
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(150 150 150);
+    margin: 10px 10px 0px 0px; 
+    font-size: 15px;
+}
+  .input-box-textarea{ 
+    display: block; /* Makes input box go to next line*/ 
+    max-width: 250px;
+    width: 80%;
+    height: 60px; 
+    outline: none; /*removes border when block is clicked on*/
+    border: none; /* removes border when box is just sitting there*/
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(150 150 150);
+    margin: 10px 10px 0px 0px; 
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+}
+  .drop-down-form{ 
+    display: block; /* Makes input box go to next line*/ 
+    max-width: 250px;
+    width: 80%;
+    height: 45px; 
+    outline: none; /*removes border when block is clicked on*/
+    border: none; /* removes border when box is just sitting there*/
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(150 150 150);
+    margin: 10px 10px 0px 0px; 
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+}
+  .italic { 
+    font-style: italic
+  }
+
+  .radio { 
+    display: block;  
+    position: relative; 
+    padding-left: 30px;
+    padding-top: 5px; 
+    cursor: pointer;
+  }
+  .radio input[type="radio"]{
+    display: none;
+  }
+  .radio span{ 
+    height: 12px; 
+    width: 12px; 
+    border-radius: 50%; 
+    border: 2px solid black; 
+    position: absolute;
+    display: block; 
+    left: 0px; 
+    top: 5px; 
+  }
+  .radio span:after { 
+    content: ""; 
+    height: 12px; 
+    width: 12px;
+    background: #00aeef; 
+    display: block;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%) scale(0);
+    position: absolute;
+    border-radius: 50%; 
+    transition: 300ms ease-in-out 0s;
+}
+  .radio input[type="radio"]:checked ~ span:after { 
+    transform: translate(-50%, -50%) scale(1); 
+  }
+
+  .checkbox { 
+    display: block;  
+    position: relative; 
+    padding-top: 10px; 
+    cursor: pointer;
+    left: 26px; 
+  }
+  .checkbox input[type="checkbox"]{
+    display: none;
+  }
+  .checkbox span{ 
+    height: 12px; 
+    width: 12px; 
+    border-radius: 25%; 
+    border: 2px solid black; 
+    position: absolute;
+    display: block; 
+    left: -25px; 
+    top: 11px; 
+  }
+  .checkbox input[type="checkbox"] ~ span:after { 
+    content: ""; 
+    height: 12px; 
+    width: 12px;
+    background: #00aeef; 
+    display: block;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%) scale(0.0);
+    position: absolute;
+    border-radius: 25%; 
+    transition: 300ms ease-in-out 0s;
+  }
+  .checkbox input[type="checkbox"]:checked ~ span:after { 
+    transform: translate(-50%, -50%) scale(1);
+    background: #00aeef; 
+  }
+
+/* -------- Banner ----------*/
+  .banner { 
+    background: rgb(81 179 220); 
+    height: 20vh; 
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 20px rgba(0, 0, 0, 0.23);
+  } /* Banner across the top of page */ 
+
+/* ----- Introduction -------*/
+  .background-color-intro { 
+    background-color: rgb(230 230 230);
+  }
+  section#introduction #form-title {
+    max-width: 600px;
+    margin: auto; 
+    padding-top: 30px; 
+    text-align: center;
+  }
+  section#introduction h1 { 
+    padding: 30px 20px 20px 20px;
+    font-size: 38px;
+  }
+  section#introduction #form-description {
+    max-width: 600px;
+    margin: auto; 
+    margin-top: 10px; 
+    text-align: center;
+  }
+  section#introduction p { 
+    padding: 0px 20px 30px 20px;
+}
+
+/* ----- Background -------*/
+  section#background-information #section-title {
+    max-width: 600px;
+    margin: auto; 
+    text-align: center;
+  }
+  section#background-information h2 { 
+    padding: 20px 20px 20px 20px;
+  }
+  
+/* ----- Education -------*/
+  section#progress #section-title {
+    max-width: 600px;
+    margin: auto; 
+    text-align: center;
+  }
+  section#progress h2 { 
+    padding: 20px 20px 20px 20px;
+  }
+
+/* ----- Submit Response -------*/
+  section#Submit button { 
+    margin: 30px; 
+    height: 50px; 
+    width: 180px; 
+    font-size: 18px; 
+    line-height: 100%; 
+    text-align: top; 
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+    outline: none;
+    animation-name: submit-button-animation; 
+    animation-duration: 300ms; 
+  }
+
+  }
+  @keyframes submit-button-animation {
+    0% { 
+      background: rgb(230, 230, 230);}
+    100%{
+      background: red;}
+  }
+
+section#Submit { 
+background: rgb(81 179 220)}
+
+/* ----- Media queries ----*/
+
+@media (max-width: 675px) { 
+        
+  .row {
+    display: inline;
+  }
+  .input-box{ 
+    display: block; /* Makes input box go to next line*/ 
+    height: 40px; 
+    width: calc(100% - 10px);
+    max-width: 100%; 
+    outline: none; /*removes border when block is clicked on*/
+    border: none; /* removes border when box is just sitting there*/
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(150 150 150);
+    margin: 10px 10px 0px 0px; 
+    font-size: 15px;
+  }
+  .input-box-textarea{ 
+    display: block; /* Makes input box go to next line*/ 
+    height: 60px; 
+    width: calc(100% - 10px); /*To deal with the padding of text in such a way that does not oversize the box*/
+    max-width: 100%; 
+    outline: none; /*removes border when block is clicked on*/
+    border: none; /* removes border when box is just sitting there*/
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(150 150 150);
+    margin: 10px 10px 0px 0px; 
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+  }
+  .drop-down-form{ 
+    display: block; /* Makes input box go to next line*/ 
+    width: 100%;
+    max-width: 100%; 
+    height: 45px; 
+    outline: none; /*removes border when block is clicked on*/
+    border: none; /* removes border when box is just sitting there*/
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(150 150 150);
+    margin: 10px 10px 0px 0px; 
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+}
+  
+  input[type="text"]{
+      padding-left: 10px;
+    }
+  input[type="number"]{
+      padding-left: 10px;
+    }
+  input[type="email"]{
+      padding-left: 10px;
+    }
+  textarea { 
+  padding: 10px 0px 0px 10px; }
+}
